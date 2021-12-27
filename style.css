@@ -105,6 +105,7 @@ body {
 }
 
 :is(.first-info, .second-info, .third-info) p {
+    letter-spacing: 1px;
     font-size: 0.9em;
     color: var(--dark-gray);
 }
