@@ -47,8 +47,6 @@ body {
 }
 
 .img-avatar {
-    position: relative;
-    bottom: 9px;
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -60,10 +58,10 @@ body {
 .section-details {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
     width: 350px;
-    height: 200px;
+    height: 300px;
 }
 
 .name {
@@ -85,4 +83,26 @@ body {
 .line {
     width: 100%;
     opacity: 25%;
+}
+
+.info-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 350px;
+    height: 100px;
+}
+
+:is(.first-info, .second-info, .third-info) h1, p {
+    text-align: center;
+}
+
+:is(.first-info, .second-info, .third-info) h1 {
+    text-transform: uppercase;
+}
+
+:is(.first-info, .second-info, .third-info) p {
+    font-size: 0.9em;
+    color: var(--dark-gray);
 }
